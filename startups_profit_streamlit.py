@@ -4,13 +4,13 @@ import numpy as np
 import pandas as pd
 
 # Load the model
-lin_reg = joblib.load(r'd:\courses materials\Zero Grad ML\projects\Startups_profit/lin_reg.pkl')
+lin_reg = joblib.load('lin_reg.pkl')
 
 # Load the pipeline
-full_pipeline = joblib.load(r'd:\courses materials\Zero Grad ML\projects\Startups_profit/full_pipeline.pkl')
+full_pipeline = joblib.load('full_pipeline.pkl')
 
 # Load the data
-startups = pd.read_csv(r'd:\courses materials\Zero Grad ML\data\50_Startups.csv')
+startups = pd.read_csv('50_Startups.csv')
 startups.columns = startups.columns.str.lower()
 
 # Create a title and sub-title
