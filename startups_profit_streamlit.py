@@ -45,5 +45,5 @@ features_prepared = full_pipeline.transform(features)
 prediction = lin_reg.predict(features_prepared)[0]
 
 # Set a subheader and display the prediction
-st.subheader('Prpfit Prediction:')
+st.subheader('Profit Prediction:')
 st.markdown('''# $ {} '''.format(round(prediction), 2))
